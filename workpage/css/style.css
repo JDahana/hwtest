@@ -1,0 +1,328 @@
+/*navigation*/
+body {
+    background-color:white;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: aliceblue;
+  }
+  
+  .active {
+    background-color: aliceblue;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  #navBar {
+    text-decoration: none;
+  }
+
+  /*header*/
+  #headercont {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+   } 
+
+    /*role and overview*/
+    #viewrole{
+      text-align: center;
+    }
+
+    .role {
+      background-color: #b4c2e4;
+      opacity: 0.5;
+      width: 500px;
+      height: 250px;
+      border-radius: 15px;
+      margin: 20px;
+      display: inline-block;
+      text-align: center;
+    }
+
+  
+/* research*/
+
+#researchGrid {
+  margin: 25px 50px;
+  display: grid;
+  height: auto;
+  min-height: 500px;
+  grid-template-rows: 40% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: 
+  "text1 research1"
+  "research2 research1"
+  }
+#text1 {
+  grid-area: text1;
+}
+#research1 {
+  grid-area: research1;
+  background-image: url(../images/research\ 1.png);
+}
+#research2 {
+  grid-area: research2;
+  background-image: url(../images/reasearch\ 2.png);
+}
+.researchGridArea {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  display: grid;
+  align-content: center;
+}
+  /* Ideation */
+  #ideationGrid {
+    margin: 25px 50px;
+    display: grid;
+    height: auto;
+    min-height: 500px;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "ideation1 text2"
+    "ideation1 text2"
+    }
+  #text2 {
+    grid-area: text2;
+  }
+  #ideation1 {
+    grid-area: ideation1;
+    background-image: url(../images/ideation.png);
+  }
+  
+  .ideationGridArea {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    display: grid;
+    align-content: center;
+  }
+
+  /* prototyping */
+  #prototypeGrid {
+    margin: 25px 50px;
+    display: grid;
+    height: auto;
+    min-height: 450px;
+    grid-template-rows: 40% 15% 15% 15% 15%;
+    grid-template-columns: 40% 15% 15% 15% 15%;
+    grid-template-areas: 
+    "text3 prototype1 prototype2 prototype3 prototype4"
+    "text3 prototype1 prototype2 prototype3 prototype4"
+    }
+  #text3 {
+    grid-area: text3;
+    height: 300px;
+  }
+  #prototype1 {
+    grid-area: prototype1;
+    background-image: url(../images/prototype1.png);
+    height: 300px;
+  }
+  #prototype2 {
+    grid-area: prototype2;
+    background-image: url(../images/prototype2.png);
+    height: 300px;
+  }
+  #prototype3 {
+    grid-area: prototype3;
+    background-image: url(../images/prototype3.png);
+    height: 300px;
+  }
+  #prototype4 {
+    grid-area: prototype4;
+    background-image: url(../images/prototype4.png);
+    height: 300px;
+  }
+ 
+  .prototypeGridArea {
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    display: grid;
+    align-content: center;
+  }
+
+  /* user testing and outcomes*/
+  #testingGrid {
+    margin: 25px 50px;
+    display: grid;
+    height: auto;
+    min-height: 500px;
+    grid-template-rows: 60% 40%;
+    grid-template-columns: 60% 40%;
+    grid-template-areas: 
+    "testing1 text4"
+    "testing1 text4"
+    }
+  #text4 {
+    grid-area: text4;
+  }
+  #testing1 {
+    grid-area: testing1;
+    background-image: url(../images/testing.png);
+  }
+  
+  .testingGridArea {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    display: grid;
+    align-content: center;
+  }
+
+  /* conclusion and future opportunities*/
+
+  #conclusionGrid {
+    margin: 25px 30px;
+    display: grid;
+    height: auto;
+    min-height: 500px;
+    grid-template-rows: 40% 15% 15% 15% 15%;
+    grid-template-columns: 40% 15% 15% 15% 15%;
+    grid-template-areas: 
+    "text5 conclusion1 conclusion2 conclusion3 conclusion4"
+    "text5 conclusion1 conclusion2 conclusion3 conclusion4"
+    }
+  #text5 {
+    grid-area: text5;
+    height: 300px;
+  }
+  #conclusion1 {
+    grid-area: conclusion1;
+    background-image: url(../images/conclusion\ 1.png);
+    height: 300px;
+  }
+  #conclusion2 {
+    grid-area: conclusion2;
+    background-image: url(../images/conclusion\ 2.png);
+    height: 300px;
+  }
+  #conclusion3 {
+    grid-area: conclusion3;
+    background-image: url(../images/conclusion\ 3.png);
+    height: 300px;
+  }
+  #conclusion4 {
+    grid-area: conclusion4;
+    background-image: url(../images/conclusion\ 4.png);
+    height: 300px;
+  }
+
+  .conclusionGridArea {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    display: grid;
+    align-content: center;
+  }
+
+   /* more project*/
+   #projectGrid {
+    margin: 25px 30px;
+    display: grid;
+    height: auto;
+    min-height: 400px;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "project1 project2"
+    }
+
+  #project1 {
+    grid-area: project1;
+    background-image: url(../images/more\ projec\ 1.png);
+    height: 270px;
+  }
+  #project2 {
+    grid-area: project2;
+    background-image: url(../images/more\ project\ 2.png);
+    height: 270px;
+  }
+  .projectGridArea {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 15px;
+    display: grid;
+    align-content: center;
+  }
+
+    /* Typography and aesthetic */ 
+  .SubHeading {
+    text-align: left;
+    font-family: 'Mulish', sans-serif;
+  } 
+  .sitename {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #3C64B1;
+    text-decoration: none;
+  }
+  .p {
+    font-family: 'Lora', serif;
+  }
+  .SubHeading1 {
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+    font-family: 'Mulish', sans-serif;
+  } 
+  #background1 {
+    background-color: #ecf0f8;
+  }
