@@ -1,0 +1,198 @@
+
+/*navigation*/
+body {
+    background-color:white;
+  }
+  h1 {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: aliceblue;
+  }
+  
+  .active {
+    background-color: aliceblue;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+/* introduction CSS*/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    min-height: 500px;
+    padding-left: 40px;
+  }
+  img {
+    max-width: 100%
+  }
+  .image {
+    flex-basis: 100%
+  }
+  .text {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .icons {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 20%;
+     padding: 20px
+  }
+
+/* Work Grid CSS*/
+
+  #workGrid {
+    margin: 25px 50px;
+    display: grid;
+    height: auto;
+    min-height: 550px;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "travellingo fridgesfamily"
+    "departmentofeducation bookflip"
+    }
+  #travellingo {
+    grid-area: travellingo;
+    background-image: url(../images/travellingo.png);
+  }
+  #fridgesfamily {
+    grid-area: fridgesfamily;
+    background-image: url(../images/fridgesandfamily.png);
+    height: 255px;
+  }
+  #fridgesfamily:hover {
+    opacity: 0.3;
+  }
+  #departmentofeducation {
+    grid-area: departmentofeducation;
+    background-image: url(../images/depofedu.png);
+  }
+  #bookflip {
+    grid-area: bookflip;
+    background-image: url(../images/bookflip.png);
+  }
+  .workGridArea {
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 10px;
+    display: grid;
+    align-content: center;
+  }
+
+  /* Skill image CSS*/
+   #skills {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+   } 
+
+
+
+ /* Footer Styles */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+  }
+  #footericon {
+    margin-left: auto;
+    margin-right: auto;
+    width: 14%;
+  } 
+  #scrollup{
+    margin-left: auto;
+    display: block;
+    position: relative;
+  }
+ /* Typography */ 
+  .subHeading {
+    text-align: center;
+    width: 300px;
+    margin: 50px auto;
+    font-family: 'Mulish', sans-serif;
+  } 
+  .sitename {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #3C64B1;
+  }
+  .p {
+    font-family: 'Lora', serif;
+  }
+
+  /* responsiveness */ 
+
+  @media only screen and (max-width: 600px) {
+    #workGrid {
+      grid-template-rows: 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "travellingo"
+        "fridgesfamily"
+        "departmentofeducation"
+        "bookflip"
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
